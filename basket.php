@@ -1,4 +1,5 @@
 <?php
+include("db.php");
 $pagename = "smart basket";  // Set page name variable
 
 echo "<link rel=stylesheet type=text/css href=mystylesheet.css>"; // Include stylesheet
@@ -9,7 +10,11 @@ include("headfile.html"); // Include header file
 
 echo "<h4>" . $pagename . "</h4>"; // Display page name on the webpage
 
-echo "<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>"; // Placeholder text
+$newprodid = $_POST["h_prodid"];
+$reququantity = $_POST["p_quantity"];
+
+echo "prodId = " . $newprodid . " quantity selected = " . $reququantity . "";
+
 
 include("footfile.html"); // Include footer file
 
